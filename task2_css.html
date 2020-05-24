@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8"> 
+		<title>Задание 2 CSS Титов</title> 
+	</head>
+	<body> 
+		<style type="text/css">
+		#webForm {
+			display: grid;
+			grid-template-columns: auto 470px auto;
+			grid-template-rows: auto 315px auto;
+			height: 100%;
+			background: rgb(39, 39, 51);
+			min-height: 100vh;
+			
+
+		}
+		
+
+			.web-form {
+						grid-row: 2;
+						grid-column: 2;
+						height: 100%;
+						min-height: 400px;
+						
+					}
+			.form-inputs {
+						background: #fff;
+						border-radius: 2px 2px 2px 2px !important;
+						}
+						
+				#MainLabel {
+							position: relative;
+							left: 192px;
+							top: 20px;
+							font-size: x-large;
+							}
+						
+				#loginUsername, #loginPassword  {
+						width: 335px !important;
+						height: 48px !important;
+						background: rgb(255, 255, 255) !important;
+						margin: 0px 45px 20px 45px !important;
+						padding: 0px 20px 0px 20px !important;
+						border: 2px solid rgb(228, 228, 228) !important;
+						border-radius: 4px 4px 4px 4px !important;
+						color: darkgray;
+						font-weight: bold;
+
+						}
+								#loginSubmit {
+									width: 380px !important;
+									height: 48px !important;
+									margin: 0px 45px 20px 45px !important;
+									background-color: rgb(56, 190, 153) !important;
+									border: 1px solid rgb(56, 190, 153) !important;
+									border-radius: 4px 4px 4px 4px !important;
+									cursor: pointer;
+									color: #fff;
+									font-size: larger;
+									font-family: unset;
+											}
+
+		#loginPassword:focus, #loginUsername:focus {
+					border: 2px solid rgb(153, 222, 202)  !important;
+						{
+			
+
+
+
+		</style>
+		<form method="POST" id="webForm">
+			<div class="web-form">
+			<div class="form-inputs">
+			<label id="MainLabel">SIGN IN</label>
+			<div class="input-username">
+				<div>
+					<input id="loginUsername" type="text" name="email" placeholder="EMail Address" required="" style="margin-top: 60px !important;>
+				</div>
+			</div>
+			<div class="input-password">
+				<div>
+					<input id="loginPassword" type="password" name="password" placeholder="Password" required="">
+				</div>
+				<span class="input-pass-hidden"></span>
+			</div>
+
+			<div class="form-buttons">
+				<input id="loginSubmit" name="submit" type="submit" value="Login">
+			</div>
+			</div>
+			<a href="http://yandex.ru"  style="position: relative;left: 192px;bottom: 18px;font-size: x-small;color: black;font-weight: unset; text-decoration: underline;text-decoration-skip-ink: none;">forgot your password?</a>
+			</div>
+			<p style="position: relative; font-size: x-small;font-weight: unset; color: white;text-align: center;font-size: 11px;">Don't have an account ? <a href="http://yandex.ru" style="text-decoration: none; border-bottom: 2px rgb(141, 141, 141) solid; color: white;font-weight: bold; font-size: 11.4px;">Signup</a></p>
+		</form>		
+	</body>
+</html>
